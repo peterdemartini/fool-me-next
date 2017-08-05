@@ -29,6 +29,16 @@ module.exports = {
         include: path.join(__dirname, "lib"),
       },
       {
+        test: /\.css$/,
+        include: path.join(__dirname, "node_modules"),
+        loader: "style-loader!css-loader",
+      },
+      {
+        test: /\.css$/,
+        include: path.join(__dirname, "lib"),
+        loader: "style-loader!css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]&importLoaders=1",
+      },
+      {
         test: /\.(ico|jpg|png|gif|eot|otf|svg|ttf|woff|woff2)(\?.*)?$/,
         include: [path.join(__dirname, "lib"), path.join(__dirname, "node_modules")],
         loader: "file-loader",
@@ -45,7 +55,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: "transform?brfs",
+        loader: "transform-loader?brfs",
         include: /node_modules\/pixi\.js/,
       },
     ],
