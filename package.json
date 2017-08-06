@@ -38,6 +38,7 @@
     "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
+    "keyboard-handler": "^1.1.1",
     "pixi.js": "^4.5.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
@@ -46,6 +47,7 @@
     "react-router-redux": "^4.0.8",
     "redux": "^3.7.2",
     "redux-act": "^1.3.0",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0"
   }
 }
