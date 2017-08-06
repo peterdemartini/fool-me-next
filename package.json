@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "keyboard-handler": "^1.1.1",
+    "lodash": "^4.17.4",
     "pixi.js": "^4.5.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
